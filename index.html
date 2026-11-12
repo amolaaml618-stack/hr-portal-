@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HR Portal | لجنة سوشيال ميديا</title>
+<style>
+:root{--navy:#1f3864;--navy2:#294879;--teal:#2f8178;--bg:#f3f6fa;--card:#fff;--text:#202938;--muted:#718096;--line:#e3e9f0;--soft:#edf3f8;--red:#c24141;--gold:#b7791f;--shadow:0 8px 26px rgba(31,56,100,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.65}button,input,select,textarea{font:inherit}button{cursor:pointer}
+.layout{display:flex;min-height:100vh}.sidebar{width:255px;background:var(--navy);color:#fff;padding:22px 15px;position:fixed;inset:0 0 0 auto;z-index:5;overflow:auto}.brand{padding:8px 12px 24px;border-bottom:1px solid #ffffff25;margin-bottom:18px}.brand b{font-size:22px;letter-spacing:1px}.brand small{display:block;color:#cbd6e8;font-size:12px}.nav button{width:100%;border:0;background:transparent;color:#dbe5f2;text-align:right;padding:12px 14px;border-radius:11px;margin:3px 0;font-size:14px}.nav button:hover,.nav button.active{background:#ffffff20;color:#fff}.nav button span{display:inline-block;width:27px}.side-note{font-size:11px;color:#cbd6e8;margin:25px 12px}.main{margin-right:255px;width:calc(100% - 255px);padding:25px;max-width:1600px}.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;gap:12px}.topbar h1{font-size:23px;margin:0}.topbar p{margin:3px 0;color:var(--muted);font-size:13px}.pill{background:#e6f4ef;color:#21735e;padding:6px 11px;border-radius:30px;font-size:12px}.page{display:none}.page.active{display:block}.grid{display:grid;gap:16px}.stats{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}.stat-label{color:var(--muted);font-size:13px}.stat-value{font-size:29px;font-weight:bold;color:var(--navy);margin-top:7px}.stat-foot{font-size:11px;color:var(--muted)}.two{grid-template-columns:1.25fr .75fr}.section-title{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 0 14px}.section-title h2{font-size:17px;margin:0}.muted{color:var(--muted)}.btn{border:0;border-radius:9px;padding:10px 15px;background:var(--navy);color:#fff;font-weight:bold;font-size:13px}.btn:hover{background:var(--navy2)}.btn.secondary{background:#eaf0f7;color:var(--navy)}.btn.teal{background:var(--teal)}.btn.danger{background:#fff0f0;color:var(--red)}.btn.small{padding:6px 10px;font-size:12px}.actions{display:flex;gap:8px;flex-wrap:wrap}.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{margin-bottom:12px}.field label{display:block;font-weight:bold;font-size:13px;margin-bottom:6px}.field input,.field select,.field textarea,.search{width:100%;border:1px solid var(--line);background:#fbfcfe;border-radius:9px;padding:10px 12px;color:var(--text);outline:none}.field textarea{min-height:85px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:#7693bd;box-shadow:0 0 0 3px #7693bd20}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:650px;font-size:13px}th,td{text-align:right;padding:11px 10px;border-bottom:1px solid var(--line);white-space:nowrap}th{color:var(--muted);font-weight:bold;background:#fafbfd}.empty{text-align:center;padding:25px;color:var(--muted)}.badge{display:inline-block;border-radius:20px;padding:4px 9px;font-size:11px;background:#edf2f8;color:var(--navy)}.badge.good{background:#e6f4ec;color:#23734d}.badge.warn{background:#fff4df;color:#986515}.badge.bad{background:#ffeded;color:#b33b3b}.criteria{border:1px solid var(--line);padding:13px;border-radius:12px;margin:10px 0;background:#fbfcfe}.criteria-head{display:flex;justify-content:space-between;gap:8px;font-weight:bold;font-size:13px}.criteria small{color:var(--muted)}.scale{display:flex;gap:8px;margin-top:10px}.scale label{flex:1;text-align:center;border:1px solid var(--line);border-radius:8px;padding:7px 0;background:white;cursor:pointer;font-size:13px}.scale input{display:none}.scale input:checked+label{background:var(--navy);color:#fff;border-color:var(--navy)}.scorebox{background:#eef3fa;border-radius:12px;text-align:center;padding:15px;margin:15px 0}.scorebox strong{font-size:30px;color:var(--navy)}.notice{padding:12px;border-radius:10px;background:#fff8e8;color:#855b16;font-size:12px;margin:12px 0}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}.toolbar .search{max-width:280px}.hidden{display:none!important}.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.quick button{background:#f4f7fb;border:1px solid var(--line);border-radius:12px;padding:15px;text-align:right;color:var(--navy)}.quick b{display:block;margin-top:5px;font-size:13px}.quick span{font-size:22px}.bar{height:8px;background:#edf1f5;border-radius:20px;overflow:hidden}.bar i{display:block;height:100%;background:var(--teal);border-radius:20px}.footer{color:var(--muted);font-size:11px;text-align:center;margin:25px 0 5px}.mobile-head{display:none}
+@media(max-width:900px){.sidebar{width:215px}.main{margin-right:215px;width:calc(100% - 215px);padding:18px}.stats{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}}
+@media(max-width:650px){.sidebar{width:100%;height:auto;inset:auto 0 0 0;padding:8px;display:flex;overflow-x:auto}.brand,.side-note{display:none}.nav{display:flex;gap:4px;min-width:max-content}.nav button{width:auto;margin:0;padding:9px 11px;font-size:11px}.nav button span{width:auto;margin-left:4px}.main{margin:0 0 68px;width:100%;padding:15px}.topbar h1{font-size:19px}.stats{gap:9px}.card{padding:14px}.stat-value{font-size:24px}.field-grid{grid-template-columns:1fr}.quick{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar">
+ <div class="brand"><b>HR PORTAL</b><small>لجنة سوشيال ميديا</small></div>
+ <nav class="nav" id="nav">
+  <button class="active" data-page="dashboard"><span>▦</span>لوحة التحكم</button>
+  <button data-page="members"><span>♙</span>الميمبرز</button>
+  <button data-page="evaluations"><span>✓</span>التقييمات</button>
+  <button data-page="attendance"><span>◷</span>الحضور</button>
+  <button data-page="feedback"><span>✉</span>Feedback</button>
+  <button data-page="reports"><span>▤</span>التقارير</button>
+  <button data-page="settings"><span>⚙</span>الإعدادات</button>
+ </nav>
+ <div class="side-note">HR Portal · نسخة مشتركة</div>
+</aside>
+<main class="main">
+<header class="topbar"><div><h1 id="pageTitle">لوحة التحكم</h1><p>إدارة ومتابعة أعضاء لجنة سوشيال ميديا</p></div><span class="pill" id="status">● جاري الاتصال…</span></header>
+
+<section class="page active" id="dashboard">
+ <div class="grid stats">
+  <div class="card"><div class="stat-label">إجمالي الميمبرز</div><div class="stat-value" id="statMembers">0</div><div class="stat-foot">المسجلين في قاعدة البيانات</div></div>
+  <div class="card"><div class="stat-label">التقييمات</div><div class="stat-value" id="statEvals">0</div><div class="stat-foot">إجمالي التقييمات المسجلة</div></div>
+  <div class="card"><div class="stat-label">سجلات الحضور</div><div class="stat-value" id="statAttendance">0</div><div class="stat-foot">إجمالي سجلات الحضور</div></div>
+  <div class="card"><div class="stat-label">Feedback</div><div class="stat-value" id="statFeedback">0</div><div class="stat-foot">الآراء والملاحظات المستلمة</div></div>
+ </div>
+ <div class="grid two">
+  <div class="card"><div class="section-title"><h2>نظرة عامة على التقييمات</h2><span class="badge">آخر البيانات</span></div><div id="overview" class="empty">لسه مفيش تقييمات مسجلة.</div></div>
+  <div class="card"><div class="section-title"><h2>الوصول السريع</h2></div><div class="quick">
+   <button onclick="showPage('members')"><span>♙</span><b>إضافة ميمبر</b></button>
+   <button onclick="showPage('evaluations')"><span>✓</span><b>تقييم جديد</b></button>
+   <button onclick="showPage('attendance')"><span>◷</span><b>تسجيل حضور</b></button>
+   <button onclick="showPage('feedback')"><span>✉</span><b>إضافة Feedback</b></button>
+  </div></div>
+ </div>
+ <div class="card" style="margin-top:16px"><div class="section-title"><h2>آخر التقييمات</h2><button class="btn secondary small" onclick="showPage('evaluations')">عرض الكل</button></div><div id="recentEvals" class="empty">لا توجد بيانات حتى الآن.</div></div>
+</section>
+
+<section class="page" id="members">
+ <div class="card">
+  <div class="section-title"><h2>ميمبرز لجنة سوشيال ميديا</h2><button class="btn" onclick="toggleForm('memberForm')">+ إضافة ميمبر</button></div>
+  <div id="memberForm" class="hidden">
+   <div class="field-grid">
+    <div class="field"><label>اسم الميمبر *</label><input id="mName" placeholder="الاسم بالكامل"></div>
+    <div class="field"><label>رقم الهاتف</label><input id="mPhone" placeholder="01xxxxxxxxx"></div>
+    <div class="field"><label>اللجنة</label><input id="mCommittee" value="سوشيال ميديا" readonly></div>
+    <div class="field"><label>المنصب</label><select id="mRole"><option>ميمبر</option><option>نائب رئيس لجنة</option><option>رئيس لجنة</option></select></div>
+    <div class="field"><label>الفريق</label><input id="mTeam" placeholder="مثال: Cairo"></div>
+    <div class="field"><label>حالة العضوية</label><select id="mStatus"><option>نشط</option><option>غير نشط</option><option>اعتذر</option></select></div>
+   </div>
+   <div class="actions"><button class="btn teal" onclick="addMember()">حفظ الميمبر</button><button class="btn secondary" onclick="toggleForm('memberForm')">إلغاء</button></div>
+   <hr style="border:0;border-top:1px solid var(--line);margin:18px 0">
+  </div>
+  <div class="toolbar"><input class="search" id="memberSearch" placeholder="ابحث بالاسم أو اللجنة..." oninput="renderMembers()"></div>
+  <div id="membersTable" class="empty">مفيش ميمبرز لسه. ابدأي بإضافة أول ميمبر.</div>
+ </div>
+</section>
+
+<section class="page" id="evaluations">
+ <div class="card">
+  <div class="section-title"><h2>تقييم أداء الميمبر</h2><span class="badge">من 100 درجة</span></div>
+  <div class="field-grid">
+   <div class="field"><label>اسم الميمبر *</label><select id="eMember"><option value="">اختاري الميمبر</option></select></div>
+   <div class="field"><label>اسم الليدر المسؤول *</label><input id="eLeader" placeholder="اسم الليدر"></div>
+   <div class="field"><label>اللجنة</label><input id="eCommittee" value="سوشيال ميديا" readonly></div>
+   <div class="field"><label>شهر التقييم</label><select id="eMonth"></select></div>
+  </div>
+  <h3 style="font-size:15px">معايير التقييم</h3>
+  <div id="criteria"></div>
+  <div class="field-grid">
+   <div class="field"><label>نقاط القوة</label><textarea id="eStrength" placeholder="إيه أكتر حاجة الميمبر متميز فيها؟"></textarea></div>
+   <div class="field"><label>نقاط التطوير</label><textarea id="eImprove" placeholder="إيه اللي محتاج يطوره؟"></textarea></div>
+  </div>
+  <div class="scorebox">الدرجة النهائية <br><strong id="score">—</strong> / 100 <div id="grade" class="muted"></div></div>
+  <button class="btn teal" style="width:100%" onclick="saveEvaluation()">حفظ التقييم</button>
+ </div>
+ <div class="card" style="margin-top:16px"><div class="section-title"><h2>سجل التقييمات</h2></div><div id="evalTable" class="empty">لا توجد تقييمات بعد.</div></div>
+</section>
+
+<section class="page" id="attendance">
+ <div class="card">
+  <div class="section-title"><h2>تسجيل الحضور والمتابعة</h2></div>
+  <div class="field-grid">
+   <div class="field"><label>اسم الميمبر</label><select id="aMember"></select></div>
+   <div class="field"><label>اسم الإيفنت / الميتنج</label><input id="aEvent" placeholder="اسم الفعالية"></div>
+   <div class="field"><label>التاريخ</label><input id="aDate" type="date"></div>
+   <div class="field"><label>الحالة</label><select id="aStatus"><option>حاضر</option><option>غائب</option><option>اعتذار مقبول</option><option>متأخر</option></select></div>
+  </div>
+  <div class="field"><label>ملاحظات</label><textarea id="aNotes" placeholder="أي تفاصيل إضافية..."></textarea></div>
+  <button class="btn teal" onclick="saveAttendance()">حفظ سجل الحضور</button>
+ </div>
+ <div class="card" style="margin-top:16px"><div class="section-title"><h2>سجلات الحضور</h2></div><div id="attendanceTable" class="empty">لا توجد سجلات.</div></div>
+</section>
+
+<section class="page" id="feedback">
+ <div class="card">
+  <div class="section-title"><h2>Feedback & Suggestions</h2></div>
+  <div class="field-grid">
+   <div class="field"><label>اسم الميمبر</label><select id="fMember"></select></div>
+   <div class="field"><label>نوع الرسالة</label><select id="fType"><option>اقتراح</option><option>مشكلة</option><option>شكوى</option><option>تقدير وشكر</option><option>طلب دعم</option></select></div>
+  </div>
+  <div class="field"><label>التفاصيل</label><textarea id="fText" placeholder="اكتب رسالتك هنا..."></textarea></div>
+  <button class="btn teal" onclick="saveFeedback()">حفظ الرسالة</button>
+ </div>
+ <div class="card" style="margin-top:16px"><div class="section-title"><h2>الرسائل المستلمة</h2></div><div id="feedbackTable" class="empty">لا توجد رسائل.</div></div>
+</section>
+
+<section class="page" id="reports">
+ <div class="card">
+  <div class="section-title"><h2>التقارير والإحصائيات</h2><span class="badge">تصدير البيانات</span></div>
+  <p class="muted" style="font-size:13px">حمّلي كل نوع بيانات في ملف CSV وافتحيه باستخدام Excel.</p>
+  <div class="actions">
+   <button class="btn" onclick="exportCSV('members')">تحميل بيانات الميمبرز</button>
+   <button class="btn" onclick="exportCSV('evaluations')">تحميل التقييمات</button>
+   <button class="btn" onclick="exportCSV('attendance')">تحميل الحضور</button>
+   <button class="btn" onclick="exportCSV('feedback')">تحميل Feedback</button>
+  </div>
+  <div class="notice">ملحوظة: التقارير بتعرض كل البيانات المشتركة. اعملي نسخة احتياطية بشكل دوري من خلال تحميل ملفات CSV.</div>
+ </div>
+</section>
+
+<section class="page" id="settings">
+ <div class="card">
+  <div class="section-title"><h2>إعدادات النظام</h2></div>
+  <div class="field"><label>اسم المؤسسة / النشاط</label><input id="orgName" value="HR Department"></div>
+  <div class="field"><label>نسخة احتياطية من كل البيانات</label><button class="btn" onclick="backup()">تحميل نسخة احتياطية JSON</button></div>
+  <div class="field"><label>استعادة نسخة احتياطية</label><input type="file" id="restoreFile" accept=".json" onchange="restoreBackup(event)"></div>
+  <div class="notice">البيانات بتتحفظ في قاعدة بيانات مشتركة: أي حد عنده صلاحية تعديل على الصفحة بيشوف نفس البيانات ويقدر يضيف ويحذف. الدخول بيتم بحساب Claude.</div>
+  <button class="btn danger" onclick="clearAll()">مسح كل البيانات</button>
+ </div>
+</section>
+<div class="footer">HR Portal · Built for people development and better follow-up</div>
+</main>
+</div>
+<script>
+const KEY='hr_portal_data_v1';
+let db={members:[],evaluations:[],attendance:[],feedback:[]},store=null;
+try{let l=JSON.parse(localStorage.getItem(KEY)||'null');if(l&&l.members)db=l}catch(e){}
+const criteria=[['الحضور والالتزام بالمواعيد',25],['تنفيذ المهام وجودة الشغل',20],['المشاركة في الفعاليات وساعات التطوع',20],['المبادرة والأفكار الجديدة',15],['الشغل الجماعي والتعاون',10],['السلوك والتواصل',10]];
+const months=['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+const $=id=>document.getElementById(id);
+const COLS=['members','evaluations','attendance','feedback'];
+function sortDb(){db.members.sort((a,b)=>a.id-b.id);['evaluations','attendance','feedback'].forEach(t=>db[t].sort((a,b)=>b.id-a.id))}
+function localSave(){try{localStorage.setItem(KEY,JSON.stringify(db))}catch(e){}}
+function setStatus(t){$('status').textContent=t}
+async function put(type,obj){try{if(store){await store.collection(type).doc(String(obj.id)).set(obj)}else{db[type]=db[type].filter(x=>x.id!==obj.id).concat([obj]);sortDb();localSave();refresh()}return true}catch(e){alert('تعذر الحفظ. غالباً مفيش عندك صلاحية تعديل على الصفحة دي.');return false}}
+async function del(type,id){try{if(store){await store.collection(type).doc(String(id)).delete()}else{db[type]=db[type].filter(x=>x.id!==id);localSave();refresh()}return true}catch(e){alert('تعذر الحذف. غالباً مفيش عندك صلاحية تعديل على الصفحة دي.');return false}}
+async function restoreAll(x){for(const t of COLS)for(const it of x[t]){if(!await put(t,it))return}alert('تمت استعادة البيانات')}
+async function wipeAll(){for(const t of COLS)for(const it of [...db[t]]){if(!await del(t,it.id))return}}
+function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===id));$('pageTitle').textContent=document.querySelector(`[data-page="${id}"]`).textContent.trim()}
+document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>showPage(b.dataset.page));
+function toggleForm(id){$(id).classList.toggle('hidden')}
+function table(headers,rows){if(!rows.length)return '<div class="empty">لا توجد بيانات حتى الآن.</div>';return '<div class="table-wrap"><table><thead><tr>'+headers.map(h=>'<th>'+h+'</th>').join('')+'</tr></thead><tbody>'+rows.join('')+'</tbody></table></div>'}
+async function addMember(){let name=$('mName').value.trim();if(!name)return alert('اكتبي اسم الميمبر');if(!await put('members',{id:Date.now(),name,phone:$('mPhone').value,committee:$('mCommittee').value,role:$('mRole').value,team:$('mTeam').value,status:$('mStatus').value}))return;['mName','mPhone','mTeam'].forEach(x=>$(x).value='');toggleForm('memberForm')}
+function renderMembers(){let q=$('memberSearch').value.toLowerCase();$('membersTable').innerHTML=table(['الاسم','رقم الهاتف','اللجنة','المنصب','الفريق','الحالة','إجراء'],db.members.filter(m=>(m.name+m.committee+m.team).toLowerCase().includes(q)).map(m=>`<tr><td>${esc(m.name)}</td><td>${esc(m.phone)}</td><td>${esc(m.committee)}</td><td>${esc(m.role)}</td><td>${esc(m.team)}</td><td><span class="badge">${esc(m.status)}</span></td><td><button class="btn danger small" onclick="removeItem('members',${m.id})">حذف</button></td></tr>`))}
+function fillMemberSelects(){['eMember','aMember','fMember'].forEach(id=>{let old=$(id).value;$(id).innerHTML='<option value="">اختاري الميمبر</option>'+db.members.map(m=>`<option value="${m.id}">${esc(m.name)}</option>`).join('');$(id).value=old})}
+function renderCriteria(){$('criteria').innerHTML=criteria.map((c,i)=>`<div class="criteria"><div class="criteria-head"><span>${c[0]}</span><small>الوزن ${c[1]}%</small></div><div class="scale">${[1,2,3,4,5].map(n=>`<span style="flex:1"><input type="radio" id="c${i}_${n}" name="c${i}" value="${n}" onchange="calcScore()"><label for="c${i}_${n}">${n}</label></span>`).join('')}</div><div class="muted" style="font-size:11px;display:flex;justify-content:space-between"><span>ضعيف</span><span>ممتاز</span></div></div>`).join('')}
+function calcScore(){let vals=criteria.map((_,i)=>document.querySelector(`input[name=c${i}]:checked`));if(vals.some(v=>!v)){$('score').textContent='—';$('grade').textContent='اختاري درجة لكل معيار';return null}let s=vals.reduce((a,v,i)=>a+(+v.value/5)*criteria[i][1],0);$('score').textContent=s.toFixed(1);$('grade').textContent=s>=90?'ممتاز':s>=75?'جيد جداً':s>=60?'جيد':s>=50?'يحتاج تحسين':'ضعيف';return s}
+async function saveEvaluation(){let member=db.members.find(m=>m.id==$('eMember').value),leader=$('eLeader').value.trim(),score=calcScore();if(!member||!leader||score===null)return alert('اختاري الميمبر والليدر وقيّمي كل المعايير');let vals=criteria.map((_,i)=>+document.querySelector(`input[name=c${i}]:checked`).value);if(!await put('evaluations',{id:Date.now(),member:member.name,memberId:member.id,leader,committee:$('eCommittee').value,month:$('eMonth').value,scores:vals,total:+score.toFixed(1),grade:score>=90?'ممتاز':score>=75?'جيد جداً':score>=60?'جيد':score>=50?'يحتاج تحسين':'ضعيف',strength:$('eStrength').value,improve:$('eImprove').value,date:new Date().toLocaleDateString('ar-EG')}))return;document.querySelectorAll('#criteria input').forEach(x=>x.checked=false);$('eStrength').value='';$('eImprove').value='';$('eLeader').value='';calcScore();alert('تم حفظ التقييم بنجاح')}
+async function saveAttendance(){let m=db.members.find(x=>x.id==$('aMember').value);if(!m||!$('aEvent').value.trim()||!$('aDate').value)return alert('كمّلي البيانات المطلوبة');if(!await put('attendance',{id:Date.now(),member:m.name,event:$('aEvent').value,date:$('aDate').value,status:$('aStatus').value,notes:$('aNotes').value}))return;$('aEvent').value='';$('aNotes').value='';alert('تم حفظ سجل الحضور')}
+async function saveFeedback(){let m=db.members.find(x=>x.id==$('fMember').value);if(!m||!$('fText').value.trim())return alert('اختاري الميمبر واكتبي الرسالة');if(!await put('feedback',{id:Date.now(),member:m.name,type:$('fType').value,text:$('fText').value,date:new Date().toLocaleDateString('ar-EG')}))return;$('fText').value='';alert('تم حفظ الرسالة')}
+async function removeItem(type,id){if(confirm('متأكدة إنك عايزة تحذفي السجل؟'))await del(type,id)}
+function renderEvaluations(){$('evalTable').innerHTML=table(['الميمبر','الليدر','اللجنة','الشهر','الدرجة','التقدير','التاريخ','إجراء'],db.evaluations.map(e=>`<tr><td>${esc(e.member)}</td><td>${esc(e.leader)}</td><td>${esc(e.committee)}</td><td>${esc(e.month)}</td><td><b>${e.total}/100</b></td><td><span class="badge ${e.total>=75?'good':e.total>=50?'warn':'bad'}">${esc(e.grade)}</span></td><td>${esc(e.date)}</td><td><button class="btn danger small" onclick="removeItem('evaluations',${e.id})">حذف</button></td></tr>`))}
+function renderAttendance(){$('attendanceTable').innerHTML=table(['الميمبر','الفعالية','التاريخ','الحالة','ملاحظات','إجراء'],db.attendance.map(a=>`<tr><td>${esc(a.member)}</td><td>${esc(a.event)}</td><td>${esc(a.date)}</td><td>${esc(a.status)}</td><td>${esc(a.notes)}</td><td><button class="btn danger small" onclick="removeItem('attendance',${a.id})">حذف</button></td></tr>`))}
+function renderFeedback(){$('feedbackTable').innerHTML=table(['الميمبر','النوع','الرسالة','التاريخ','إجراء'],db.feedback.map(f=>`<tr><td>${esc(f.member)}</td><td>${esc(f.type)}</td><td style="white-space:normal;min-width:180px">${esc(f.text)}</td><td>${esc(f.date)}</td><td><button class="btn danger small" onclick="removeItem('feedback',${f.id})">حذف</button></td></tr>`))}
+function csvCell(x){return '"'+String(x??'').replace(/"/g,'""')+'"'}
+function exportCSV(type){let rows=db[type];if(!rows.length)return alert('لا توجد بيانات للتصدير');let keys=Object.keys(rows[0]);let content='\ufeff'+[keys.map(csvCell).join(','),...rows.map(r=>keys.map(k=>csvCell(Array.isArray(r[k])?r[k].join(' | '):r[k])).join(','))].join('\r\n');let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([content],{type:'text/csv;charset=utf-8'}));a.download=type+'_hr_report.csv';a.click();URL.revokeObjectURL(a.href)}
+function backup(){let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(db,null,2)],{type:'application/json'}));a.download='hr_portal_backup.json';a.click();URL.revokeObjectURL(a.href)}
+function restoreBackup(e){let file=e.target.files[0];if(!file)return;let r=new FileReader();r.onload=()=>{try{let x=JSON.parse(r.result);if(!x.members||!x.evaluations||!x.attendance||!x.feedback)throw Error();restoreAll(x)}catch(err){alert('ملف النسخة الاحتياطية غير صالح')}};r.readAsText(file)}
+function clearAll(){if(confirm('تحذير: سيتم حذف كل البيانات نهائياً من قاعدة البيانات المشتركة لكل المستخدمين. هل أنتِ متأكدة؟')){wipeAll()}}
+function refresh(){renderMembers();renderEvaluations();renderAttendance();renderFeedback();fillMemberSelects();$('statMembers').textContent=db.members.length;$('statEvals').textContent=db.evaluations.length;$('statAttendance').textContent=db.attendance.length;$('statFeedback').textContent=db.feedback.length;$('recentEvals').innerHTML=db.evaluations.length?table(['الميمبر','الدرجة','التقدير'],db.evaluations.slice(0,5).map(e=>`<tr><td>${esc(e.member)}</td><td>${e.total}/100</td><td>${esc(e.grade)}</td></tr>`)):'<div class="empty">لا توجد بيانات حتى الآن.</div>';let avg=db.evaluations.length?db.evaluations.reduce((a,e)=>a+e.total,0)/db.evaluations.length:0;$('overview').innerHTML=db.evaluations.length?`<div style="font-size:13px">متوسط التقييم العام</div><div style="font-size:30px;color:var(--navy);font-weight:bold">${avg.toFixed(1)} / 100</div><div class="bar"><i style="width:${avg}%"></i></div><p class="muted" style="font-size:12px">${db.evaluations.length} تقييم مسجل</p>`:'<div class="empty">لسه مفيش تقييمات مسجلة.</div>'}
+months.forEach((m,i)=>$('eMonth').add(new Option(m,m,i===new Date().getMonth(),i===new Date().getMonth())));$('aDate').value=new Date().toISOString().slice(0,10);renderCriteria();refresh();
+(async()=>{
+ try{store=await claude.use('db')}catch(e){store=null}
+ if(!store){setStatus('● وضع محلي — البيانات على هذا المتصفح فقط');return}
+ db={members:[],evaluations:[],attendance:[],feedback:[]};refresh();
+ setStatus('● جاري تحميل البيانات المشتركة…');
+ let t=setTimeout(()=>setStatus('● لم يتم الوصول للبيانات المشتركة بعد…'),10000);
+ COLS.forEach(c=>store.collection(c).onSnapshot(sn=>{clearTimeout(t);db[c]=sn.docs.map(d=>d.data());sortDb();setStatus('● متصل — بيانات مشتركة');refresh()},e=>{clearTimeout(t);setStatus('● تعذر تحميل البيانات المشتركة')}));
+})();
+</script>
+</body>
+</html>
